@@ -4,11 +4,16 @@ $(document).ready(function() {
     var palr = pal.split("").reverse().join("");
 
     if (pal === palr) {
-      alert("congrats!");
+      $(".results").children().remove();
+      $(".results").append("<p> congrats, this is a palindrome!! </p>");
     }
     else {
-      alert("please enter palindrome")
+      $(".results").children().remove();
+      $(".results").append("<p> Need to find a new palindrome! </p>");
     }
+
+
+
     event.preventDefault();
   });
 });
