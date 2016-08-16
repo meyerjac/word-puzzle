@@ -16,6 +16,7 @@ $(document).ready(function() {
     sentence = replaceVowels(sentence);
     $(".results").children().remove();
     $(".results").append("<p>" + sentence + "</p>");
+    $(".results").fadeIn();
     event.preventDefault();
   });
 });

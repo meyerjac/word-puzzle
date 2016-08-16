@@ -18,12 +18,19 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     var userInput = parseInt($("input").val());
 
-    var primes = getPrimes(userInput);
-    $("ul").children().remove();
-    primes.forEach(function(prime) {
-      $("ul").append("<li>" + prime + "</li>");
-    });
-
+    if (!userInput) {
+      alert("Please enter a number!");
+    } else if (userInput < 2) {
+      alert("Please enter a number greater than 1");
+    } else {
+      var primes = getPrimes(userInput);
+      $(".inputNumber").text(userInput);
+      $("ul#result").children().remove();
+      primes.forEach(function(prime) {
+        $("ul#result").append("<li>" + prime + "</li>");
+      });
+      $(".results").fadeIn();
+    }
     event.preventDefault();
   });
 });

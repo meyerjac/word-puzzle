@@ -1,1 +1,19 @@
-sadf
+body {
+  margin-top: 70px;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.results {
+  display: none;
+}
+
+.active {
+  background-color: blue;
+}

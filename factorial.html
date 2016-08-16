@@ -2,19 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
    <script src= "js/jquery-3.1.0.js"></script>
     <script src="js/factorial.js"></script>
     <title>factorial</title>
   </head>
   <body>
-    <form>
-      <label for="input">input a number for factorial manipulation<label>
-      <input type="text" id=input>
-      <button type="submit" name="button">submit</button>
-    </form>
-    <div class="results">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand">Epicodus</a>
+        <ul class="nav navbar-nav nav-pills pull-right">
+          <li><a href="index.html">Word Game</a></li>
+          <li class="active"><a href="factorial.html">Factorials</a></li>
+          <li><a href="palindromes.html">Palindromes</a></li>
+          <li><a href="prime.html">Prime Numbers</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Factorials</h1>
+        <form>
+          <label for="input">input a number for factorial manipulation</label>
+          <input type="text" id="input" class="form-control">
+          <button type="submit" name="button" class="btn btn-success">submit</button>
+        </form>
+      </div>
+        <div class="results">
 
-    </div>
+        </div>
+      </div>
   </body>
 </html>

@@ -16,6 +16,7 @@ $(document).ready(function()  {
     if (num) {
       $(".results").children().remove();
       $(".results").append("<p>" + num + "</p>");
+      $(".results").fadeIn();
     }
     event.preventDefault();
     });
