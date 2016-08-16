@@ -11,11 +11,11 @@ var replaceVowels = function(input) {
 }
 
 $(document).ready(function() {
-  $("form").submit(function(hash) {
+  $("form").submit(function(event) {
     var sentence = $("#input").val();
     sentence = replaceVowels(sentence);
     $(".results").children().remove();
     $(".results").append("<p>" + sentence + "</p>");
-    hash.preventDefault();
+    event.preventDefault();
   });
 });
